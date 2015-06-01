@@ -518,7 +518,7 @@ class ConfigurationManager extends \TYPO3\CMS\Extbase\Configuration\Configuratio
 				'action' => 'dispatchRpc',
 			)
 		);
-		$smdJson->target = '../' . BackendUtility::getModuleUrl('tools_ExtensionBuilderExtensionbuilder', $parameters);
+		$smdJson->target = '../..' . BackendUtility::getModuleUrl('tools_ExtensionBuilderExtensionbuilder', $parameters);
 		$smdJsonString = json_encode($smdJson);
 		$ajaxRequestHandler->setContent(array($smdJsonString));
 	}
